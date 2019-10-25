@@ -66,8 +66,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\counter.txt" />
     <Content Include="Demo.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="onlineNumber.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +82,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="onlineNumber.ascx.cs">
+      <DependentUpon>onlineNumber.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onlineNumber.ascx.designer.cs">
+      <DependentUpon>onlineNumber.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
